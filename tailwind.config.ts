@@ -1,19 +1,15 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        paradise: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
+        blush: {
+          50: "#fdf2f7",
+          100: "#fce7f0",
+          200: "#fbcfe3",
+          300: "#f9a8d0",
           400: "#f472b6",
           500: "#ec4899",
           600: "#db2777",
@@ -21,21 +17,23 @@ const config: Config = {
           800: "#9d174d",
           900: "#831843",
         },
-        cream: {
-          50: "#fefdfb",
-          100: "#fef9f3",
-          200: "#fdf2e9",
-          300: "#f9e6d3",
+        ivory: {
+          50: "#fffefb",
+          100: "#fefcf7",
+          200: "#fdf8ef",
         },
-        gold: {
-          400: "#f0c674",
-          500: "#d4a84b",
-          600: "#b8860b",
+        rose: {
+          850: "#7a1438",
+          950: "#4c0d22",
         },
       },
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Playfair Display", "Georgia", "serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        soft: "0 4px 24px -4px rgba(157, 23, 77, 0.08)",
+        lift: "0 12px 40px -8px rgba(157, 23, 77, 0.14)",
       },
     },
   },
